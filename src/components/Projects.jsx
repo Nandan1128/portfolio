@@ -29,7 +29,7 @@ const projectsData = [
         tech: ['React JS', 'Supabase', 'Auth', 'Real-time'],
         links: {
             demo: '#',
-            github: 'https://github.com/nandangogari'
+            github: 'https://github.com/jainam30/mohil-enterprise'
         }
     },
     {
