@@ -6,6 +6,11 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 100px;
+}
+
 :root {
     --bg-primary: #0a0e27;
     --bg-secondary: #151932;
@@ -82,15 +87,19 @@ body {
 }
 
 @keyframes morph {
-    0%, 100% { 
+
+    0%,
+    100% {
         transform: translate(0, 0) scale(1) rotate(0deg);
         border-radius: 50%;
     }
-    33% { 
+
+    33% {
         transform: translate(100px, 100px) scale(1.2) rotate(120deg);
         border-radius: 40% 60% 60% 40%;
     }
-    66% { 
+
+    66% {
         transform: translate(-100px, 50px) scale(0.9) rotate(240deg);
         border-radius: 60% 40% 40% 60%;
     }
@@ -134,6 +143,7 @@ nav {
         transform: translateX(-50%) translateY(-100px);
         opacity: 0;
     }
+
     to {
         transform: translateX(-50%) translateY(0);
         opacity: 1;
@@ -218,6 +228,7 @@ nav a:hover {
         opacity: 0;
         transform: translateX(-100px);
     }
+
     to {
         opacity: 1;
         transform: translateX(0);
@@ -250,13 +261,25 @@ nav a:hover {
 }
 
 @keyframes shine {
-    0% { left: -100%; }
-    100% { left: 200%; }
+    0% {
+        left: -100%;
+    }
+
+    100% {
+        left: 200%;
+    }
 }
 
 @keyframes glow {
-    0%, 100% { box-shadow: 0 0 20px rgba(0, 212, 255, 0.3); }
-    50% { box-shadow: 0 0 40px rgba(0, 212, 255, 0.6); }
+
+    0%,
+    100% {
+        box-shadow: 0 0 20px rgba(0, 212, 255, 0.3);
+    }
+
+    50% {
+        box-shadow: 0 0 40px rgba(0, 212, 255, 0.6);
+    }
 }
 
 .hero h1 {
@@ -273,8 +296,15 @@ nav a:hover {
 }
 
 @keyframes gradient-shift {
-    0%, 100% { background-position: 0% 50%; }
-    50% { background-position: 100% 50%; }
+
+    0%,
+    100% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
 }
 
 .hero .subtitle {
@@ -366,8 +396,15 @@ nav a:hover {
 }
 
 @keyframes bounce {
-    0%, 100% { transform: translateX(-50%) translateY(0); }
-    50% { transform: translateX(-50%) translateY(15px); }
+
+    0%,
+    100% {
+        transform: translateX(-50%) translateY(0);
+    }
+
+    50% {
+        transform: translateX(-50%) translateY(15px);
+    }
 }
 
 .scroll-indicator span {
@@ -471,8 +508,15 @@ section {
 }
 
 @keyframes fadeIn {
-    from { opacity: 0; transform: translateY(20px); }
-    to { opacity: 1; transform: translateY(0); }
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 .section-title {
@@ -537,8 +581,13 @@ section {
 }
 
 @keyframes rotate {
-    0% { transform: rotate(0deg); }
-    100% { transform: rotate(360deg); }
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
 }
 
 .skill-card:hover {
@@ -1210,8 +1259,17 @@ footer::before {
     }
 
     @keyframes morph {
-        0%,100% { transform: scale(1); border-radius: 50%; }
-        50% { transform: scale(1.05); border-radius: 45%; }
+
+        0%,
+        100% {
+            transform: scale(1);
+            border-radius: 50%;
+        }
+
+        50% {
+            transform: scale(1.05);
+            border-radius: 45%;
+        }
     }
 
     .skill-card,
@@ -1239,7 +1297,7 @@ footer::before {
 
     nav {
         backdrop-filter: none !important;
-        background: rgba(255,255,255,0.08) !important;
+        background: rgba(255, 255, 255, 0.08) !important;
     }
 
     .scroll-indicator {
